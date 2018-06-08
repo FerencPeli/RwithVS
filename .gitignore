@@ -37,3 +37,4 @@ rsconnect/
 
 # VS
 .vs/*
+/R.Project/R.Project.rxproj.user

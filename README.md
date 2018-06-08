@@ -1,2 +1,2 @@
-# RwithVS
-Exploring R Toold for Visual Studio
+# R with Visual Studio
+Exploring R Tools for Visual Studio
