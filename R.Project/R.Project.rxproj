@@ -9,7 +9,10 @@
     <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupFile>Script.R</StartupFile>
+    <StartupFile>Scripts\CircleCalculations.R</StartupFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <SettingsFile>~/Settings.R</SettingsFile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
