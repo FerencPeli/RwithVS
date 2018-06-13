@@ -1,17 +1,22 @@
 library(RODBC)
 
+# connection string
 cat("DB connection string:", settings$dbConnection)
 
+# open db connection
 channel <- odbcDriverConnect(settings$dbConnection)
 
 query <- "SELECT * from dbo.Fruit"
 
+# perform sql query
 dbResponse <- sqlQuery(channel, query)
 
+# calculate average of price column
 averageFruitPrice <- mean(dbResponse$Price)
 
 cat("\n", averageFruitPrice)
 
+# close DB connection
 odbcClose(channel)
 
 # response

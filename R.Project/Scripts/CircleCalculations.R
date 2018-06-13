@@ -1,5 +1,6 @@
-# import helper file
 library(testthat)
+
+# import helper file
 source("Functions/Circle.R")
 
 cat("--- Start of script ---")
